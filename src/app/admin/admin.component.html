@@ -1,0 +1,61 @@
+<body>
+   
+    <h3 >{{currentUser.firstName}} {{currentUser.lastName}}</h3>
+   <h2>Available Books</h2>
+   <p></p>
+   <form>
+      
+   <input class="form-control" type="text" name="Book_Title" [(ngModel)]="Book_Title" (ngModelChange)="Search()"
+   placeholder="Enter title here to search">
+
+</form>
+
+   <br><table class="table table-bordered">
+     <thead>
+       <tr>
+         <th style = "font-size: 20px;">Id</th>
+         <th style = "font-size: 20px;">Book_Title</th>
+         <th style = "font-size: 20px;">Book_Author</th>
+         <th style = "font-size: 20px;">Book_Count</th>
+         <th style = "font-size: 20px;">Action</th>
+       </tr>
+     </thead>
+       <tbody>
+       <tr *ngFor= "let user of csers ">
+         <td style = "font-size: 20px;">{{user.id}} </td>
+         <td style = "font-size: 20px;">{{user.Book_Title}}</td>
+         <td style = "font-size: 20px;">{{user.Book_Author}}</td>
+         <td style = "font-size: 20px;">{{user.Book_Count}}</td>
+         <td>
+          <button class="delete-css" type="button" (click)="deleteRow(user.id)">Delete Book</button>&nbsp;&nbsp;
+          <button type="button" class="update-css" (click)="update(user.id)">Update Book Details</button>&nbsp;&nbsp;
+          <button type="button" class="add-css" (click)="add(user)">Add Book</button>
+          <button type="button" class="details" data-toggle="modal" data-target="#exampleModal" (click)="getData(user)">Get Book Details</button>
+         </td>
+         
+       </tr>
+     </tbody>
+      
+   </table>
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Book_id : {{id}}</h5>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p> Author : {{Book_Author}}</p>
+              <p> Title : {{Book_Title}}</p>
+              <p > NumberOfBooks : {{Book_Count}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</body>

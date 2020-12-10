@@ -1,0 +1,25 @@
+body {
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.lO4Tovb0jIEP6lyBtzZObAHaEK?w=317&h=180&c=7&o=5&dpr=1.1&pid=1.7.jpg");
+    background-size: auto;
+    height:  600px ;
+    width: 1200px;
+    background-size: cover;
+    background-position: center; 
+   /* filter: blur(1px); */
+   
+    
+    }
+    h1{
+        color:wheat;
+    }
+    p{
+        color: rgb(219, 214, 214);
+    }
+   .contact {
+      margin-left: 300px;
+font-size: 25px;
+        color: wheat;
+        }
+        .address{
+            margin-left: 250px;
+        }

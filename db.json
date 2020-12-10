@@ -1,0 +1,34 @@
+{
+  "UserDetails": [
+    {
+      "id": "004",
+      "Book_Title": "Harry_Potter",
+      "Book_Author": "J.K. Rowling",
+      "Book_Count": "30"
+    },
+    {
+      "id": "005",
+      "Book_Title": "Malificient",
+      "Book_Author": "Grey",
+      "Book_Count": "30"
+    },
+    {
+      "id": "006",
+      "Book_Title": "Divergent",
+      "Book_Author": "P.K Fascino",
+      "Book_Count": "30"
+    },
+    {
+      "id": "009",
+      "Book_Title": "Stranger Things",
+      "Book_Author": "Matt Duffer",
+      "Book_Count": "28"
+    },
+    {
+      "id": "010",
+      "Book_Title": "The Secret",
+      "Book_Author": "Rhonda Byrne",
+      "Book_Count": "10"
+    }
+  ]
+}

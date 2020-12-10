@@ -1,0 +1,55 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Login Page</title>
+    <link href="/login" rel="stylesheet">
+  
+  </head>
+  <body>
+    
+  <div class="container">
+    <div class="left-section">
+      <div class="header">
+          <marquee class="marquee"behaviour="slide" direction="left">“Books are a uniquely portable Magic”</marquee>
+      </div>
+    <!-- <div class="errorMsg"> 
+      <small *ngIf='invalidLogin'  >{{errorMessage}}</small>
+    </div>  -->
+    <div class="connexion">
+      
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                    <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                        <div *ngIf="f.username.errors.required">Username Required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Password Required</div>
+                    </div>
+                </div>
+                <button [disabled]="loading" class="btn btn-primary">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    Login
+                </button>
+                <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+            </form>
+    
+            <p>User: U:-Gauri, P:-warlock <br>
+               Librarian: U:-Sharan, P:-hcl</p>
+           
+   
+              <!-- <a href="" target="_blank"><h4>Forgot password?</h4></a> -->
+      </div>
+     
+    </div>
+
+    <div class="right-section"></div>
+  </div>
+    
+  </body>
+ 
+  

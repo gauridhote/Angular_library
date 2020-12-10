@@ -1,0 +1,24 @@
+<body>
+<div class="container">
+    <div id="set">
+        <label>Book Id</label>
+        <input type="text" class="form-control" [(ngModel)]="user.id">
+    </div> 
+    <div id="set">
+        <label>Book Title</label>
+        <input type="text" class="form-control" [(ngModel)]="user.Book_Title">
+    </div>
+    <div id="set">
+        <label>Book Author</label>
+        <input type="text" class="form-control" [(ngModel)]="user.Book_Author">
+    </div>
+    <div id="set">
+                <label>Book Count</label>
+        <input type="text" class="form-control" [(ngModel)]="user.Book_Count">
+    </div>
+    <p></p>
+    <div id="set">
+        <button type="submit" class="btn" (click)="add()">Add Book</button>
+    </div>
+</div>
+</body>

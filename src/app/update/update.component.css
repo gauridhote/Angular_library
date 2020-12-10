@@ -1,0 +1,41 @@
+body {
+    background-image: url("C:\Users\gauri.dhote\Desktop\library\OIP3.jfif");
+    background-size: auto;
+    height:  600px ;
+    width: 1200px;
+    background-size: cover;
+    background-position: center;
+    
+    }
+    #set{position:relative;
+      left:300px; 
+      top:30px; font-style:initial ; 
+
+    }
+   
+  .form-group{
+    text-align: center;
+    margin-left: 50px;
+  
+  }
+    .form-control{
+  width: 250px;
+  opacity: 0.40;
+  background-color: black;
+  margin-top: 2px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 50px;
+  color: rgb(136, 131, 131);
+    }
+    label{
+      color: black;
+      font-weight: bold;
+      margin-top: 50px;
+      font-size: 20px;
+    }
+    .btn{
+      margin-left: 50px;
+      background-color: black;
+      color: wheat;
+    }

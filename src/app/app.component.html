@@ -1,0 +1,35 @@
+<!-- nav -->
+<!-- <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Library</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav> --><div class="back-ground"> 
+<div class="icon-bar" *ngIf="currentUser" >
+    <a class="active" href="home"><i class="fa fa-home">  Home</i></a>
+   
+    <a  href="search" *ngIf="isUser" ><i class="fa fa-search">    Search</i></a>
+    <a  href="admin" *ngIf="isLibrarian" ><i class="fa fa-book">    Book_Details</i></a>
+    
+    <a href="https://www.barnesandnoble.com/blog/25-books-probably-read-already/"><i class="fa fa-globe">    Browse</i></a>
+    <a href="aboutUs"><i class="fa fa-info">    About Us</i></a>
+    <a (click)="logout()"> <i class="fa fa-sign-out" >   Log-Out</i></a>
+  </div>
+  
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+</div>
+
+<!-- credits -->
+<!-- <div class="text-center mt-4">
+    <p>
+        <a href="https://jasonwatmore.com/post/2019/08/06/angular-8-role-based-authorization-tutorial-with-example" target="_top">Angular 8 - Role Based Authorization Tutorial with Example</a>
+    </p>
+    <p>
+        <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p>
+</div> -->

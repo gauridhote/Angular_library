@@ -1,0 +1,62 @@
+<body>
+   <h3 >{{currentUser.firstName}} {{currentUser.lastName}}</h3>
+
+<h2>Available Books</h2>
+
+<form>
+<input class="form-control" type="text" name="Book_Title" [(ngModel)]=" Book_Title" (ngModelChange)="Search()"
+placeholder="Enter title here to search">
+</form>
+<p></p>
+<table class="table-bordered">
+   <thead>
+    <tr>
+      <th style = "font-size: 30px;">Id</th>
+      <th style = "font-size: 30px;">Book_Title</th>
+      <th style = "font-size: 30px;">Book_Author</th>
+      <th style = "font-size: 30px;">Book_Count</th>
+      <th style = "font-size: 30px;">Action</th>
+    </tr>
+   </thead>
+   <tbody>
+      <tr *ngFor= "let user of csers ">
+        <td style = "font-size: 20px;">{{user.id}} </td>
+        <td style = "font-size: 20px;">{{user.Book_Title}}</td>
+        <td style = "font-size: 20px;">{{user.Book_Author}}</td>
+        <td style = "font-size: 20px;">{{user.Book_Count}}</td>
+        <td style = "font-size: 30px;"><button class="btn-get" (click)="getmethod()">Get</button> 
+         &nbsp;&nbsp;&nbsp;
+         <button class="btn-return" (click)="returnmethod()">Return</button></td>
+        
+      </tr>
+     </tbody>
+</table>
+
+<!-- <form>
+<input class="form-control" type="text" name="Book_Title" [(ngModel)]="Book_Title" (ngModelChange)="Search()"
+placeholder="Enter title here to search"></form>
+<br><table class="table table-bordered">
+<thead>
+ <tr>
+   <th style = "font-size: 30px;">id</th>
+   <th style = "font-size: 30px;">Book_Title</th>
+   <th style = "font-size: 30px;">Book_Author</th>
+   <th style = "font-size: 30px;">Book_Count</th>
+   <th style = "font-size: 30px;">Action</th>
+ </tr>
+</thead>
+ <tbody>
+ <tr *ngFor= "let user of csers | paginate: { itemsPerPage: 5, currentPage: p }">
+   <td style = "font-size: 20px;">{{user.id}} </td>
+   <td style = "font-size: 20px;">{{user.Book_Title}}</td>
+   <td style = "font-size: 20px;">{{user.Book_Author}}</td>
+   <td style = "font-size: 20px;">{{user.Book_Count}}</td>
+   <td style = "font-size: 30px;"><a class="btn-success">Get</a>&nbsp;&nbsp;&nbsp;<a class="btn-danger">Return</a></td>
+   
+ </tr>
+</tbody> -->
+
+<!-- </table>   -->
+
+
+</body>

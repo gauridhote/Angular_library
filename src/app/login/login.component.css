@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+     
+      background-image: url("https://i.pinimg.com/originals/39/87/2d/39872d5ebb92f7c6973c22c10751d62c.jpg");
+      background-position: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    width: 1200px;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+   
+  }
+  
+  .left-section {
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+
+    -webkit-animation-name: left-section;
+            animation-name: left-section;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  
+  .right-section {
+    flex: 1;
+    background: linear-gradient(to right, #f50629 0%, #fd9d08 100%);
+    transition: 1s;
+    background-image: url("https://blogs.studyinsweden.se/wp-content/uploads/2017/05/cecilia_larsson_lantz-stockholm_university_library-2614-1024x683.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+    .marquee{
+      overflow: auto;
+      margin-top:0px;
+        font-size: 150%;
+        color: rgb(238, 221, 197);
+      font-style: italic;
+        font-family: 'Trebuchet MS';  
+    }
+    .menu {
+      text-align: left;
+    }
+    
+  
+ .container-fluid{
+    font-family:  'Lato', sans-serif;;
+     font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+     
+ }
+  
+  .animation {
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: .4s;
+            animation-duration: .4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+   
+  .a1 {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .a2 {
+    -webkit-animation-delay: 2.1s;
+            animation-delay: 2.1s;
+  }
+  .a3 {
+    -webkit-animation-delay: 2.2s;
+            animation-delay: 2.2s;
+  }
+  .a4 {
+    -webkit-animation-delay: 2.3s;
+            animation-delay: 2.3s;
+  }
+  .a5 {
+    -webkit-animation-delay: 2.4s;
+            animation-delay: 2.4s;
+  }
+  .a6 {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translateY(-40px);
+              transform: translateY(-40px);
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes left-section {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    100% {
+      opacity: 1;
+      padding: 10px 40px;
+      width: 500px;
+    }
+  }
+
+  .menu {
+    position: relative;
+    padding: 17% 13% 0% 10%;
+  }
+  .menu h2 {
+    padding: 0px 10px;
+    display: inline;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 15px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #ffffff;
+  }
+  a:not(.active) {
+    cursor:inherit;
+  }
+ 
+  .menu .active h2 {
+    border-bottom: 0 solid #ffffff;
+    color: #ffffff;
+    transition: color 0.5s ease-in;
+  }
+
+  .connexion {
+    position: absolute;
+    padding: 12% 5%;
+    width: 40%;
+    left:0px;
+    transition: all 0.7s;
+}
+.connexion h2 {
+  
+  display: inline;
+  margin: 20px;
+  
+  border-bottom: 2px solid #ffffff;
+}
+.connexion h3 {
+  margin: 7px;
+  margin-bottom: 0;
+  text-align: left;
+  color: #ffffff;
+  opacity: 0.3;
+}
+.connexion h4 {
+  margin-bottom: 0;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.connexion h4:hover {
+  opacity: 0.8;
+  transition: all 0.1s ease-in;
+}
+.sign-up-part{
+margin-top: 5px;
+}
+label {
+  display: block;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(243, 222, 222);
+  margin-left: 80px;
+}
+
+input {
+font-display: inherit;
+  font-weight: bold;
+
+  display: block;
+  width: 93%;
+  margin: auto;
+  padding: 13px;
+  border: 0;
+  border-radius: 20px;
+  font-family: "Roboto",sans-serif;
+  opacity: 0.45;
+  margin-left: 80px;
+}
+
+input p {
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 150px;
+  width: 50%;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 1;
+  background-color: #391991;
+  cursor: pointer;
+}
+
+
+
+
+.path-moving,
+.path-back {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.path-moving {
+  -webkit-transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s;
+  transition: stroke .4s,stroke-dasharray .4s,stroke-dashoffset .4s;
+  stroke: #ffffff;
+  stroke-dasharray: 110;
+  stroke-dashoffset: -32;
+}
+.enregistrer {
+  position: absolute;
+  padding: 15% 13%;
+  width: 74%;
+  right:0px;
+  transition: all 0.7s;
+}
+.active-section {
+  position: absolute;
+  right:500px;
+}
+.remove-section {
+  position: absolute;
+  left: 500px;
+}
+
+.connexion h5 {
+  text-align: left;
+font: bold;
+color: #d1c1c1;
+}
+
+.errorMsg{
+  margin-top: 70px;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #f01414;
+  
+
+}
+
+.credentials{
+  color: #d1c1c1;
+  margin-bottom: 0px;
+
+}
+
+p{
+margin-left: 150px;
+  color:gray;
+  margin-top:60px;
+}

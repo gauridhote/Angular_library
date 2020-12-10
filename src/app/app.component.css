@@ -1,0 +1,45 @@
+.back-ground{
+    background-color: black;
+}
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+   top: 100px;
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 15px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 20px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: rgb(10, 10, 10); /* Add a hover color */
+  }
+  
+  .active {
+    background-color: #b9082f; /* Add an active/current color */
+  }
+
+  .button-con{
+      margin: 100;
+     text-align: center;
+      padding: 0% 13% 0% 10%;
+  }
+  .input{
+    margin: 100;
+    text-align: center;
+     padding: 0% 13% 0% 10%;
+     left:0px;
+     transition: all 1s;
+  }
+  .container{
+      background-color: black;
+
+  }
+  

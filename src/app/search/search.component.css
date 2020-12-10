@@ -1,0 +1,56 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/39/87/2d/39872d5ebb92f7c6973c22c10751d62c.jpg");
+    background-size: auto;
+    height:  600px ;
+    width: 1200px;
+    background-size: cover;
+    background-position: center;
+    
+    }
+    h3{
+        font-size: 25px;
+    display:inline;
+    float:right;
+    color:rgb(101, 202, 202);
+    }
+          
+          h2{
+              color:rgb(140, 181, 196);
+              margin-top: 10px;
+              
+          }
+
+          .form-control{
+              margin-left: 100px;
+              margin-top: 50px;;
+             width: 1000px;
+background-color: rgb(41, 34, 29);
+font-weight: bold;
+ }
+          .table-bordered{
+              width: 1000px;
+            margin-left: 100px;
+border: black;
+          }
+          thead{
+            text-align: center;
+              color: rgb(85, 31, 121);
+              background-color: black;
+          }
+          tbody{
+              color: cornsilk;
+              text-align: center;
+          }
+         .btn-get{
+color:rgb(74, 189, 135) ;
+font-weight: bold;
+opacity: 0.54;  
+background-color: black;  
+font-display: initial;  
+  }
+          .btn-return{
+color: red;
+opacity: 0.54;
+font-weight: bold;  
+background-color: black; 
+          }
